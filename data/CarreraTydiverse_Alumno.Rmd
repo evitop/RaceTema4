@@ -106,7 +106,7 @@ Después de la primera carga poner **eval=FALSE** en el *chunk* anterior para ac
 
 ```{r}
 # Cargamos el fichero binario
-load(file ='./data/2024-03-12.Rdata')
+load(file ='2024-03-12.Rdata')
 dim(mydf)
 head(mydf)
 
@@ -124,7 +124,8 @@ rm(mydf)
 ```
 3. Una ventaja de trasformar en tibble es la visualización. Escribe directamente el nombre de la variable y observa la visualización. Posteriormente usa la función `glimpse` sobre `cran` y observa el resultado.
 ```{r}
-
+cran
+glimpse(cran)
 
 ```
 # dplyr
