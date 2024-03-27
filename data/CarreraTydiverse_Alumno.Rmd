@@ -223,7 +223,8 @@ cran3 %>% group_by(by_package = package)
 
 20. Usa la función `summarise` sobre  el elemento agrupado y calcula  el valor medio de la variable `size`. Observa el efecto del agrupamiento en el resultado.
 ```{r}
-
+cran3 %>% group_by(package) %>% summarise(avg_size = median(size))
+  
 ```
 21. Para el agrupamiento creado calcula: 
 + . count = n()
